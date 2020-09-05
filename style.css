@@ -1,99 +1,171 @@
 :root {
-    --primary-color: #ff523b;
-    --secondary-color: #ffd6d6;
-    --secondary-color2: #563434;
+  --primary-color: #ff523b;
+  --secondary-color: #ffd6d6;
+  --secondary-color2: #563434;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
 }
 
 nav {
-    flex: 1;
-    text-align: right;
+  flex: 1;
+  text-align: right;
 }
 
 nav ul {
-    display: inline-block;
-    list-style-type: none;
+  display: inline-block;
+  list-style-type: none;
 }
 
 nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-
+  display: inline-block;
+  margin-right: 20px;
 }
 
 a {
-    text-decoration: none;
-    color: #555;
+  text-decoration: none;
+  color: #555;
 }
 
 p {
-    color: #555;
+  color: #555;
 }
 
 .container {
-    max-width: 1300px;
-    margin: auto;
-    padding: 0 25px;
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 25px;
 }
 
 .row {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .col-2 {
-    flex-basis: 50%;
-    min-width: 300px;
+  flex-basis: 50%;
+  min-width: 300px;
 }
 
 .col-2 img {
-    max-width: 100%;
-    padding: 50px 0;
+  max-width: 100%;
+  padding: 50px 0;
 }
 
 .col-2 h1 {
-    font-size: 50px;
-    line-height: 60px;
-    margin: 25px 0;
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
 }
 
 .btn {
-    display: inline-block;
-    background: var(--primary-color);
-    color: #fff;
-    padding: 8px 30px;
-    margin: 30px 0;
-    border-radius: 30px;
-    transition: background .5s;
+  display: inline-block;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.5s;
 }
 
 .btn:hover {
-    background: var(--secondary-color2);
+  background: var(--secondary-color2);
 }
 
 .header {
-    background: radial-gradient(#fff, var(--secondary-color));
+  background: radial-gradient(#fff, var(--secondary-color));
 }
 
 .header .row {
-    margin-top: 70px;
+  margin-top: 70px;
 }
 
 /* end header */
+
+.container_collection {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  padding: 0 25px;
+  height: 100vh;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  background-image: url(images/UrbanFashionImg/background.png);
+}
+
+.collection_content h1 {
+  font-size: 60px;
+  font-weight: 100;
+  margin-top: 24px;
+  margin-bottom: 15px;
+  color: #232d60;
+}
+
+.collection_content p {
+  font-size: 20px;
+  color: #6a7199;
+}
+
+.collection_content {
+  margin-left: 12%;
+  margin-top: 10%;
+  z-index: 10;
+  position: relative;
+}
+.collection_content .btn {
+  display: inline-block;
+  background: linear-gradient(45deg, #87adfe, #ff77cd);
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #fff;
+  box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+  border-radius: 6px;
+}
+
+.arrow-icons {
+  margin-top: 40px;
+  display: flex;
+}
+
+.arrow-icons img {
+  cursor: pointer;
+  width: 40px;
+  margin-right: 25px;
+}
+.bg_img {
+  z-index: 1;
+  height: 90%;
+  position: absolute;
+  bottom: 0;
+  right: 160px;
+}
+
+.social_links {
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -90px;
+  bottom: 180px;
+}
+.social_links a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #6a7199;
+  padding-right: 20px;
+  font-size: 14px;
+}
