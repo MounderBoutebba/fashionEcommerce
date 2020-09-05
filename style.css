@@ -1,12 +1,17 @@
 :root {
     --primary-color: #ff523b;
     --secondary-color: #ffd6d6;
+    --secondary-color2: #563434;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
 .navbar {
@@ -76,10 +81,19 @@ p {
     padding: 8px 30px;
     margin: 30px 0;
     border-radius: 30px;
+    transition: background .5s;
+}
+
+.btn:hover {
+    background: var(--secondary-color2);
 }
 
 .header {
     background: radial-gradient(#fff, var(--secondary-color));
+}
+
+.header .row {
+    margin-top: 70px;
 }
 
 /* end header */
